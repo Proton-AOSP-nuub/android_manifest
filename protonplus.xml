@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote name="github" fetch="https://github.com" />
+  <remote name="github-ssh" fetch="ssh://git@github.com" />
+  <remote name="gitlab" fetch="https://gitlab.com" />
+  <remote name="gitlab-ssh" fetch="ssh://git@gitlab.com" />
+  <remote name="ProtonPlus" fetch="https://github.com/protonplus-org" revision="sc-v2" />
+  <remote name="ProtonPlus-ssh" fetch="ssh://git@github.com/protonplus-org" revision="sc-v2" />
+
+  <project path="hardware/xiaomi" name="hardware_xiaomi" remote="ProtonPlus" revision="sc-v2" />
+
+  <!-- hals -->
+  <project path="hardware/qcom-caf/common" name="hardware_qcom-caf_common" remote="ProtonPlus" revision="sc-v2">
+  <!-- add guards for CAF repositories -->
+      <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/msm8998/Android.bp" />
+      <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8998/Android.mk" />
+      <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8150/Android.bp" />
+      <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8150/Android.mk" />
+      <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8150-common/Android.bp" />
+      <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8150-common/Android.mk" />
+      <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8250/Android.bp" />
+      <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8250/Android.mk" />
+      <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8350/Android.bp" />
+      <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8350/Android.mk" />
+  </project>
+  <project path="hardware/qcom-caf/sm8150/audio" name="hardware_qcom-caf_audio"  remote="ProtonPlus" revision="sc-v2-sm8150" />
+  <project path="hardware/qcom-caf/sm8150/display" name="hardware_qcom-caf_display" remote="ProtonPlus" revision="sc-v2-sm8150" />
+  <project path="hardware/qcom-caf/sm8150/media" name="hardware_qcom-caf_media" remote="ProtonPlus" revision="sc-v2-sm8150" />
+
+  <!-- sepolicy -->
+  <project path="device/proton/sepolicy" name="device_proton_sepolicy"  remote="ProtonPlus" revision="sc-v2" />
+  <project path="device/qcom/sepolicy_vndr" name="device_qcom_sepolicy_vndr"  remote="ProtonPlus" revision="sc-v2" />
+  <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" remote="ProtonPlus" revision="sc-v2" />
+  <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="ProtonPlus" revision="sc-v2"/>
+
+</manifest>
