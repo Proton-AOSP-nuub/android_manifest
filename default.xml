@@ -1107,4 +1107,20 @@
 
   <!-- ProtonAOSP changes -->
   <include name="proton.xml"/>
+
+  <!-- PixelExperience changes -->
+  <include name="pe.xml"/>
+
+  <!-- ProtonPlus changes -->
+  <include name="protonplus.xml"/>
+
+  <!-- AtomX -->
+  <remote  name="atomx"
+           fetch=".."
+           revision="sc-v2"/>
+
+  <remote  name="atomx-gitlab"
+           fetch="https://gitlab.com/AtomXCLO"
+           revision="sc-v2"/>
+
 </manifest>
