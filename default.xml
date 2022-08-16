@@ -4,11 +4,11 @@
   <remote  name="aosp"
            fetch="https://android.googlesource.com"
            review="https://android-review.googlesource.com/" />
-  <default revision="refs/tags/android-12.1.0_r11"
+  <default revision="refs/tags/android-12.1.0_r22"
            remote="aosp"
            sync-j="4" />
 
-  <superproject name="platform/superproject" remote="aosp" revision="android-12.1.0_r11" />
+  <superproject name="platform/superproject" remote="aosp" revision="android-12.1.0_r22" />
   <contactinfo bugurl="go/repo-bug" />
 
   <project path="build/make" name="platform/build" groups="pdk" >
@@ -1114,13 +1114,8 @@
   <!-- ProtonPlus changes -->
   <include name="protonplus.xml"/>
 
-  <!-- AtomX -->
-  <remote  name="atomx"
-           fetch=".."
-           revision="sc-v2"/>
-
-  <remote  name="atomx-gitlab"
-           fetch="https://gitlab.com/AtomXCLO"
-           revision="sc-v2"/>
+  <remote name="pixel-gitlab"
+          fetch="https://gitlab.com/PixelExperience/twelve"
+          revision="twelve" />
 
 </manifest>

@@ -188,8 +188,6 @@
   <project name="android_external_rsync" path="external/rsync" remote="proton" groups="proton" />
   <project name="android_external_colorkt" path="external/colorkt" remote="proton" groups="proton" />
   <project name="android_tools_extract-utils" path="tools/extract-utils" remote="proton" groups="proton" />
-  <project path="vendor/google/gms" name="android_vendor_google_gms" remote="atomx-gitlab" clone-depth="1" />
-  <project path="vendor/pixel-framework" name="AtomXCLO/android_vendor_pixel-framework" remote="atomx" />
   <project name="android_external_themelib" path="external/themelib" remote="proton" groups="proton" />
   <project name="android_vendor_qcom_opensource_core-utils" path="vendor/qcom/opensource/core-utils" remote="proton" groups="proton" />
   <project name="android_vendor_qcom_opensource_thermal-engine" path="vendor/qcom/opensource/thermal-engine" remote="proton" groups="proton" />
